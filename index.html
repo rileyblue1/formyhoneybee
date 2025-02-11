@@ -23,13 +23,16 @@
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 10px 20px;
-            background-color: blue;
+            background-color: white;
             color: white;
             border: none;
             cursor: pointer;
             display: none;
         }
-        .container:hover .hidden-button {
+        .container:hover .hidden-button, .hidden-button:active {
+            display: block;
+        }
+        .container:hover .hint, .hidden-button:active + .hint {
             display: block;
         }
         .random-button {
@@ -37,10 +40,25 @@
             top: 70px;
             right: 50px;
             padding: 10px 20px;
-            background-color: red;
+            background-color: white;
             color: white;
             border: none;
             cursor: pointer;
+        }
+        .random-button:hover + .hint, .random-button:active + .hint {
+            display: block;
+        }
+        .hint {
+            display: none;
+            font-size: 14px;
+            color: black;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 5px;
         }
     </style>
     <script>
@@ -55,8 +73,10 @@
     <h1>Find the Hidden Button!</h1>
     <p>Move your mouse around the box below to find the hidden button.</p>
     <div class="container">
-        <button class="hidden-button" onclick="alert('You found me!')">Click Me</button>
+        <button class="hidden-button" onclick="alert('You found me!')"></button>
+        <div class="hint">Point of Interest</div>
     </div>
-    <button class="random-button" onclick="redirect()">I'm the only one you should be looking for, baby</button>
+    <button class="random-button" onclick="redirect()"></button>
+    <div class="hint">Point of Interest</div>
 </body>
 </html>
