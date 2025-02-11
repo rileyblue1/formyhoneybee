@@ -3,18 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Find a Button</h1>
+    <title>Find a Button</title>
     <style>
-          button {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            padding: 10px 20px;
-            background-color: #FFFFFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            text-align: center;
         body {
             background-color: white;
             text-align: center;
@@ -24,8 +14,6 @@
         }
         h1 {
             margin-top: 20px;
-            position: center;
-            font-family: sans-serif;
         }
         .container {
             width: 500px;
@@ -48,9 +36,8 @@
 <body>
     <h1>Find a Button Here</h1>
     <div class="container">
-        <a href="https://www.example.com">
-        <button class="button"></button>
-    </a>
+        <!-- Button that triggers a JavaScript redirect -->
+        <button class="top-right-button" onclick="window.location.href='https://github.com/your-username/your-repository-name/blob/main/path/to/your/file.html';">Click Me</button>
     </div>
 </body>
 </html>
