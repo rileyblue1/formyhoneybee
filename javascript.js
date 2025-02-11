@@ -15,7 +15,7 @@ window.onload = () => {
         },
         q2: {
             correctAnswer: "chikin",  // Correct answer for the second question
-            hint: "its protien based" // Hint for the second question
+            hint: "its protien based (and the answer may not have correct spelling)" // Hint for the second question
         },
         q3: {
             correctAnswer: "sapphira",  // Correct answer for the third question
