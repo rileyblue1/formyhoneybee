@@ -10,16 +10,16 @@ window.onload = () => {
     // Define the correct answers and hints
     const quizData = {
         q1: {
-            correctAnswer: "place",  // Correct answer for the first question
-            hint: "It's a place where we first met." // Hint for the first question
+            correctAnswer: "alyssa",  // Correct answer for the first question
+            hint: "Think harder baby (also make sure its all lowercase)" // Hint for the first question
         },
         q2: {
-            correctAnswer: "movie",  // Correct answer for the second question
-            hint: "It's a movie that we both love watching together." // Hint for the second question
+            correctAnswer: "chikin",  // Correct answer for the second question
+            hint: "its protien based" // Hint for the second question
         },
         q3: {
-            correctAnswer: "color",  // Correct answer for the third question
-            hint: "It's a color that she wears often." // Hint for the third question
+            correctAnswer: "sapphira",  // Correct answer for the third question
+            hint: "It's my fav color too!" // Hint for the third question
         }
     };
 
