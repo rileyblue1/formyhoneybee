@@ -14,7 +14,7 @@ window.onload = () => {
             hint: "Think harder baby (also make sure its all lowercase)" // Hint for the first question
         },
         q2: {
-            correctAnswer: "chikin","chickin"  // Correct answer for the second question
+            correctAnswer: "chikin",  // Correct answer for the second question
             hint: "its protien based" // Hint for the second question
         },
         q3: {
