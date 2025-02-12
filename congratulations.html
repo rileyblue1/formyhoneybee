@@ -4,62 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I love you</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Slightly cursive font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f8d9e2; /* Very light pink */
+            background-color: #f8d9e2; 
             color: rgb(255, 220, 225);
             margin: 0;
-            font-family: 'Great Vibes', cursive; /* Slightly cursive font */
+            font-family: 'Great Vibes', cursive; 
         }
 
         h1 {
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px; 
             color: rgb(255, 157, 173);
             font-size: 3em;
         }
 
         .container {
             position: absolute;
-            padding: 15px;
+            display: flex;
+            align-items: center;
             background-color: white;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 12px; /* Slightly round corners */
-        }
-
-        .top-right {
-            top: 20px;
-            right: 20px;
-        }
-
-        .middle-left {
-            top: 40%;
-            left: 20px;
-        }
-
-        .middle-bottom {
-            bottom: 20px;
-            right: 20px;
-        }
-
-        .bottom-left {
-            bottom: 20px;
-            left: 20px;
+            border-radius: 12px; 
+            padding: 15px;
+            max-width: 320px;
         }
 
         .photo {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: auto;
+            max-height: 150px;
             object-fit: cover;
             border-radius: 8px;
         }
 
         .text-container {
-            margin-left: 170px;
-            padding: 10px;
+            padding-left: 10px;
             color: rgb(255, 152, 152);
+            font-size: 1em;
+            flex: 1; 
         }
+
+       
+        .top-right {
+            top: 120px; 
+            right: 20px;
+        }
+
+        .middle-left {
+            top: 50%; 
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
     </style>
 </head>
 <body>
@@ -70,7 +68,7 @@
     <div class="container top-right">
         <img src="4.jpeg" alt="Top Right Photo" class="photo">
         <div class="text-container">
-            <p>The day we met is blurry but i know it was the second best day I ever had next to the day we are gonna meet</p>
+            <p>The day we met is blurry, but I know it was the second-best day of my life right after the day we will finally meet again. You are my favorite part of the day.  </p>
         </div>
     </div>
 
@@ -78,11 +76,9 @@
     <div class="container middle-left">
         <img src="2.jpeg" alt="Middle Left Photo" class="photo">
         <div class="text-container">
-            <p>I love how we share the same interest and the same love for fries and chicken (and hate for fish lol)</p>
+            <p>I love how we share the same interests and dislikes for things, the same obsession with fries and chicken, and our absolute hate towards fish (eww fish). I would say your my other half and without you im incomplete. yes there might be better girls out there but even in a crowd of beautiful girls my eyes would still look for you(did i say this lol?)</p>
         </div>
     </div>
-
-  
 
 </body>
 </html>
