@@ -10,73 +10,87 @@
             background-color: #f8d9e2; 
             color: rgb(255, 220, 225);
             margin: 0;
-            font-family: 'Great Vibes', cursive; 
+            font-family: 'Great Vibes', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         h1 {
             text-align: center;
-            padding: 40px 20px; 
+            padding: 40px 20px;
             color: rgb(255, 157, 173);
             font-size: 3em;
         }
 
         .container {
-            position: absolute;
             display: flex;
             align-items: center;
             background-color: white;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 12px; 
-            padding: 15px;
-            max-width: 320px;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 500px;
+            width: 90%;
+            margin: 20px auto;
         }
 
         .photo {
-            width: 100px;
+            width: 120px;
             height: auto;
-            max-height: 150px;
+            max-height: 180px;
             object-fit: cover;
             border-radius: 8px;
         }
 
         .text-container {
-            padding-left: 10px;
+            padding-left: 15px;
             color: rgb(255, 152, 152);
-            font-size: 1em;
-            flex: 1; 
+            font-size: 1.2em;
+            flex: 1;
         }
 
-       
-        .top-right {
-            top: 120px; 
-            right: 20px;
-        }
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
 
-        .middle-left {
-            top: 50%; 
-            left: 20px;
-            transform: translateY(-50%);
-        }
+            .photo {
+                width: 100%;
+                max-width: 250px;
+                max-height: none;
+                margin-bottom: 10px;
+            }
 
+            .text-container {
+                padding-left: 0;
+            }
+        }
     </style>
 </head>
 <body>
 
     <h1>I love you</h1>
 
-    <!-- Top Right -->
-    <div class="container top-right">
-        <img src="4.jpeg" alt="Top Right Photo" class="photo">
+    <!-- First Box -->
+    <div class="container">
+        <img src="4.jpeg" alt="Photo" class="photo">
         <div class="text-container">
-            <p>The day we met is blurry, but I know it was the second-best day of my life right after the day we will finally meet again. You are my favorite part of the day.  </p>
+            <p>The day we met is blurry, but I know it was the second-best day of my life right after the day we will finally meet again. You are my favorite part of the day. ❤️</p>
         </div>
     </div>
 
-    <!-- Middle Left -->
-    <div class="container middle-left">
-        <img src="2.jpeg" alt="Middle Left Photo" class="photo">
+    <!-- Second Box -->
+    <div class="container">
+        <img src="2.jpeg" alt="Photo" class="photo">
         <div class="text-container">
-            <p>I love how we share the same interests and dislikes for things, the same obsession with fries and chicken, and our absolute hate towards fish (eww fish). I would say your my other half and without you im incomplete. yes there might be better girls out there but even in a crowd of beautiful girls my eyes would still look for you(did i say this lol?)</p>
+            <p>I love how we share the same interests and dislikes for things, the same obsession with fries and chicken, and our absolute hate towards fish (eww fish). I would say you're my other half, and without you, I'm incomplete. Even in a crowd of beautiful girls, my eyes would still look for you. 💕</p>
         </div>
     </div>
 
