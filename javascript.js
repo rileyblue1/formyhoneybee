@@ -10,15 +10,15 @@ window.onload = () => {
     // Define the correct answers and hints
     const quizData = {
         q1: {
-            correctAnswer: "alyssa","Alyssa",  // Correct answer for the first question
+            correctAnswer: "Alyssa",  // Correct answer for the first question
             hint: "Think harder baby (also make sure its all lowercase)" // Hint for the first question
         },
         q2: {
-            correctAnswer: "chikin","Chikin",  // Correct answer for the second question
+            correctAnswer: "Chicken",  // Correct answer for the second question
             hint: "its protien based (and the answer may not have correct spelling)" // Hint for the second question
         },
         q3: {
-            correctAnswer: "sapphira","Sapphira",  // Correct answer for the third question
+            correctAnswer: "Sapphira",  // Correct answer for the third question
             hint: "It's my fav color too!" // Hint for the third question
         }
     };
