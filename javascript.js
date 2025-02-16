@@ -5,7 +5,7 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
     const answer = document.getElementById("question1").value.trim().toLowerCase();
     
     // Correct answer (you can change this as needed)
-    const correctAnswer = "your favorite person";  // Replace with the actual answer
+    const correctAnswer = "Sapphia";  // Replace with the actual answer
     
     const result = document.getElementById("result");
     
