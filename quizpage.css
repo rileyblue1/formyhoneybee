@@ -1,91 +1,57 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F1D7E9; /* Light pink background */
-    color: #333;
+    background-color: white;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
+    margin: 0;
 }
 
-/* Main container */
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;  /* Rounded corners for the container */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Title */
-h1 {
+    background-color: #f5f5dc; /* Beige color */
+    padding: 40px;
+    border-radius: 15px;
     text-align: center;
-    color: #FFFFFF; /* Darker pink color for the title */
-    margin-bottom: 20px;
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-/* Form and questions styling */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+h1 {
+    color: #6f4f28; /* Brown color */
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
 }
 
 .question label {
-    font-size: 1.1rem;
-    color: #333;
+    font-size: 18px;
+    color: #6f4f28; /* Brown color */
+    display: block;
+    margin-bottom: 10px;
 }
 
-input {
+.question input {
     padding: 10px;
-    border: 2px solid #e91e63; /* Matching pink border */
-    border-radius: 10px;  /* Rounded corners for the input fields */
-    font-size: 1rem;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Button styling */
 button {
     padding: 10px 20px;
-    background-color: #e91e63; /* Button in the same pink shade */
-    color: #fff;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 10px;  /* Rounded corners for the button */
-    font-size: 1.1rem;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #d81b60; /* Slightly darker pink for hover effect */
-}
-
-/* Fade-in animation for elements */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Result message styling */
-#result {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #333;
-    border-radius: 10px;
+    background-color: #45a049;
 }
