@@ -11,14 +11,14 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
     
     // Check if the answer is correct
     if (answer === correctAnswer.toLowerCase()) {
-        result.textContent = "Correct! Redirecting to your prize...";
+        result.textContent = "Nailed it";
         
         // Redirect to another page after a short delay (3 seconds)
         setTimeout(function() {
             window.location.href = "congratulations.html";  // The page you want to redirect to
         }, 3000);  // Delay of 3 seconds before redirection
     } else {
-        result.textContent = "Oops, that's not correct. Try again!";
+        result.textContent = "Nuh uh";
     }
 });
 
